@@ -1,0 +1,31 @@
+C#企业级开发技术练习11答题卡
+
+班级：     信管1班
+姓名：     李祖森
+学号：     20190307125
+
+注：请将答案放置在序号下方。*/
+
+（一）
+
+
+（二）
+using System;
+using System.IO;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string homeFile = @"d:\homeDir\Homework.txt";
+            File.WriteAllLines(homeFile, new[] { "登鹳雀楼", "唐代：王之涣" });
+            File.WriteAllText(homeFile, "白日依山尽，\r\n");
+            File.WriteAllText(homeFile, "更上一层楼。");
+        }
+    }
+}
+
+（三）
